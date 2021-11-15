@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>TVONAIR 6.0</title>
+
+    <!-- <meta name="author" content="Alvaro Trigo Lopez" /> -->
+    <!-- <meta name="description" content="fullPage full-screen navigation and sections control menu." /> -->
+    <!-- <meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,navigation,control arrows, dots" /> -->
+    <!-- <meta name="Resource-type" content="Document" /> -->
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.png" type="image/png" sizes="16x16" />
+	
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+
+    <!-- Font Awesome -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet" /> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+    <!-- Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- fullpage.js CSS -->
+    <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+	
+	<style>
+		@font-face {
+		  font-family: "Cunia";
+		  src: url("fonts/cunia/Cunia-mMlx.ttf");
+		}
+
+		@font-face {
+		  font-family: "Hunter";
+		  src: url("fonts/hunters-script/HuntersScript-51OO8.ttf");
+		}
+	</style>
+	
+    <!--[if IE]>
+      <script type="text/javascript">
+        var console = { log: function () {} };
+      </script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg px-4 py-2 navbar-light justify-content-between" id="navbar">
+        <span class="nav-item" id="logotvoa">
+            <a href="#home">
+                <img src="img/TV-Logo.png" width="42px;" id="logo" />
+                <span class="logo-detail">TVONAIR 6.0</span>
+            </a>
+        </span>
+
+        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav justify-content-around animate__animated animate__backInLeft">
+                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                    <a class="nav-link font-blue" href="#home"> Home</a>
+                </li>
+                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                    <a class="nav-link font-blue" href="#events"> Events</a>
+                </li>
+                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                    <a class="nav-link font-blue" href="#activities"> Activities</a>
+                </li>
+                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                    <a class="nav-link font-blue" href="#aboutus"> About Us</a>
+                </li>
+                <!-- <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                    <a class="nav-link font-blue" href="#partners"> Partners</a>
+                </li> -->
+                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                    <a class="nav-link font-blue" href="#contactus"> Contact Us</a>
+                </li>
+            </ul>
+        </div>
+
+        <span class="nav-item d-none d-md-block" id="logoIG">
+            <a href="https://www.instagram.com/tv.onair" target="_blank">
+                <img src="img/logo-ig.png" width="36px;" /></a>
+        </span>
+    </nav>
+    <!-- End Of Navbar -->
+
+    <!-- Loader -->
+    <div class="loader-bg">
+        <div class="loader"></div>
+    </div>
+    <!-- End Of Loader -->
+
+    <!-- ~~~Start All Content~~~ -->
+    <div id="fullpage">
+
+        <!-- Home -->
+        <div class="section" id="section0">
+            <div class="row justify-content-center full-height align-content-center m-auto" id="home">
+                <!-- <div class="col-10 col-md-5">
+                    <img src="assets/images/Tagline.png" alt="tagline" class="img-fluid" id="home-hero"/>
+                </div> -->
+                <div id="upper">
+                    <img src="img/home/upper.png" alt="Upper" />
+                </div>
+                <div id="placeholder">
+                    <img src="img/home/placeholder.png" alt="Placeholder" />
+                </div>
+                <div id="lower">
+                    <img src="img/home/lower.png" alt="Lower" />
+                </div>
+                <div id="tv-text">
+                    <img src="img/home/tv.png" alt="TV-Text"
+                        class="animate__animated animate__bounceInLeft " />
+                </div>
+                <div id="on-text">
+                    <img src="img/home/on.png" alt="On-Text"
+                        class="animate__animated animate__zoomInDown " />
+                </div>
+                <div id="air-text">
+                    <img src="img/home/air.png" alt="Air-Text"
+                        class="animate__animated animate__zoomInDown " />
+                </div>
+                <div id="text6">
+                    <img src="img/home/6.png" alt="6.0-Text"
+                        class="animate__animated animate__bounceInRight " />
+                </div>
+                <div id="logo-home">
+                    <img src="img/TV-Logo.png" alt="Logo" />
+					
+                </div>
+            </div>
+            <!-- <video id="home-video" loop muted data-autoplay>
+                <source src="./assets/videos/BgEffect.mp4#t=30" type="video/mp4">
+                <source src="./assets/videos/BgEffect1.mp4" type="video/mp4">
+            </video> -->
+        </div>
+        <!-- End Of Home -->
+
+
+        <!-- Events -->
+        <div class="section" id="section1">
+            <div class="slide" id="slide1">
+                <div class="intro">
+                    <h1>Events</h1>
+                    <p>
+                        (14 & 16 April 2021)
+                    </p>
+					<a id="btnPreEvent" class="btn" href="https://tv.umn.ac.id/onair#events/3">
+                        Pre-Event <i class="fa fa-chevron-circle-right"></i>
+                    </a>
+                </div>
+                <!-- <div id="eImage1">
+                    <img src="./assets/images/decoration/decor (25).png" alt="TopDecor">
+                </div>
+                <div id="eImage2">
+                    <img src="./assets/images/decoration/decor (24).png" alt="BottomDecor">
+                </div> -->
+                <div class="bg-events1">
+                    <img src="img/decoration/decor (16).png" alt="Image">
+                </div>
+            </div>
+
+            <div class="slide" id="slide2">
+                <div class="title-ps">
+                    <h1>Panel Discussion</h1>
+                    <p>
+                        “Developing Media in Digital Technology”
+                    </p>
+					<p id="ps-date">Rabu, 14 April 2021 | Zoom Meeting | 13.00 WIB</p>
+                </div>
+                <!-- <div id="eImage3">
+                    <img src="./assets/images/decoration/decor (25).png" alt="TopDecor">
+                </div>
+                <div id="eImage4">
+                    <img src="./assets/images/decoration/decor (24).png" alt="BottomDecor">
+                </div> -->
+                <div class="bg-events2">
+                    <img src="img/decoration/decor (16).png" alt="Image">
+                </div>
+                <p id="p-ps">
+                    Panel Discussion adalah seminar yang akan dibawakan oleh beberapa narasumber untuk menyampaikan
+                    informasi dan saling berdiskusi. Pada TVONAIR 6.0, Panel Discussion mengusung tema “Developing Media
+                    in Digital Technology”.<br>
+                    Seperti tema besar TVONAIR 6.0 tentang Konvergensi Media, seminar ini akan menjelaskan tentang
+                    bagaimana media berkembang di tengah era digital. Panel Discussion juga mengangkat konsep yang
+                    bertujuan untuk mengetahui perkembangan pada media massa terutama dalam teknologi digital sehingga
+                    mereka dapat berevolusi dengan memanfaatkan kemudahan teknologi.<br>
+                    Narasumber: Ahmad Toriq (Managing Editor Detik.com), Azizah Hanum (News Anchor CNN Indonesia), dan
+                    Hera
+                    Diani (Co-Founder Magdalene.co)
+                </p>
+                <!-- <div class="soon-ps">
+                    <img src="./assets/images/decoration/decor (29).png" alt="Image">
+                </div> -->
+				<div class="btn-pendaftaran">
+                    <a id="btnPInternal" class="btn" href="https://forms.gle/a1FhhgYe2QyugWpW8" target="_blank">
+                        Internal
+                    </a>
+                    <a id="btnPExternal" class="btn" href="https://forms.gle/gaH3tPDnv7FabcTf9" target="_blank">
+                        Eksternal
+                    </a>
+                </div>
+				<div class="narsum-ahmad">
+                    <img src="img/narsum/Ahmad.jpg" alt="Image">
+                </div>
+                <div class="narsum-azizah">
+                    <img src="img/narsum/Azizah.jpg" alt="Image">
+                </div>
+                <div class="narsum-hera">
+                    <img src="img/narsum/Hera.jpg" alt="Image">
+                </div>
+            </div>
+
+            <div class="slide" id="slide3">
+                <div class="title-snd">
+                    <h1>Sharing and Discussion</h1>
+                    <p>
+                        “Utilizing Media 5.0 Revolution for a Positive Media Trend”
+                    </p>
+					<p id="snd-date">Jum'at, 16 April 2021</p>
+                </div>
+                <!-- <div id="eImage5">
+                    <img src="./assets/images/decoration/decor (25).png" alt="TopDecor">
+                </div>
+                <div id="eImage6">
+                    <img src="./assets/images/decoration/decor (24).png" alt="BottomDecor">
+                </div> -->
+                <div class="bg-events3">
+                    <img src="img/decoration/decor (16).png" alt="Image">
+                </div>
+                <p id="p-snd">
+                    Sharing and Discussion adalah diskusi yang mengundang puluhan televisi kampus untuk saling bertukar
+                    pikiran terkait permasalahan dan kendala mereka. SnD akan melibatkan berbagai praktisi media yang
+                    akan membantu menyelesaikan permasalahan televisi kampus. <br>
+                    Dengan mengusung tema “Utilizing Media 5.0 Revolution for a Positive Media Trend”, televisi kampus
+                    diharapkan dapat menemukan solusi dan lebih berdampak dalam berkarya.<br>
+                    Narasumber: Amanda Valani (Content Manager Narasi TV) dan Sasmito Madrim (Ketua Aliansi Jurnalis
+                    Independen)
+                </p>
+                <!-- <div class="soon-snd">
+                    <img src="./assets/images/decoration/decor (28).png" alt="Image">
+                </div> -->
+				<div class="narsum-amanda">
+                    <img src="img/narsum/Amanda.jpg" alt="Image">
+                </div>
+                <div class="narsum-sasmito">
+                    <img src="img/narsum/Sasmito.jpg" alt="Image">
+                </div>
+            </div>
+			
+			<div class="slide" id="slide4">
+                <div class="title-su">
+                    <h1>Media Talk 1</h1>
+                    <p>
+                        “Speak Up and the New Media is Listening!”
+                    </p>
+                    <p id="pre1-date">Senin, 5 April 2021 | Instagram Live | 19.00-20.00 WIB</p>
+                </div>
+                <div class="bg-events4">
+                    <img src="img/decoration/decor (16).png" alt="Image">
+                </div>
+                <p id="p-su">
+                    Tahun ini, TVONAIR mengusung inovasi berupa Live Instagram. Kegiatan ini merupakan pre-event berupa
+                    talkshow yang akan dilaksanakan dan mengundang praktisi media yang inovatif. Dalam Live Instagram
+                    pertama kami, mengusung tema “Speak Up and the New Media is Listening!”.<br>
+                    TVONAIR mengajak audiens untuk aware bahwa terdapat media alternatif yang berani menyuarakan
+                    pendapat minoritas, salah satunya Cretivox. Audiens diharapkan dapat terinspirasi untuk lebih berani
+                    dalam berekspresi dan menginisiasi perubahan sekecil apa pun dalam kehidupan.<br>
+                    Narasumber: Danu Karunia (Creative Director Cretivox)
+                </p>
+				<div class="narsum-danu">
+                    <img src="img/narsum/Danu.jpg" alt="Image">
+                </div>
+            </div>
+			
+			<div class="slide" id="slide5">
+                <div class="title-mt2">
+                    <h1>Media Talk 2</h1>
+                    <p>
+                        “Embracing the Power of Social Media for TV Engagement”
+                    </p>
+                    <p id="pre2-date">Kamis, 8 April 2021 | Instagram Live | 19.00-20.00 WIB</p>
+                </div>
+                <div class="bg-events5">
+                    <img src="img/decoration/decor (16).png" alt="Image">
+                </div>
+                <p id="p-mt2">
+                    Dalam Live Instagram kedua, dengan mengusung tema “Embracing the Power of Social Media for TV
+                    Engagement” bertujuan untuk melihat tentang bagaimana televisi memanfaatkan media sosial sebagai
+                    sarana eksistensi di tengah persaingan bisnis media.<br>
+                    Pada Media Talk 2 ini, Social Media Specialist Narasi TV akan membahas tantangan baru dalam berkarya
+                    melalui Narasi TV.<br>
+                    Narasumber: Abram Agastya (Content Producer & Social Media Specialist Narasi TV)
+                </p>
+                <div class="narsum-abram">
+                    <img src="img/narsum/Abram.jpg" alt="Image">
+                </div>
+            </div>
+        </div>
+        <!-- End Of Events -->
+
+
+        <!-- Activities -->
+        <div class="section" id="section2">
+            <div class="slide" id="slide1">
+                <div class="intro">
+                    <h1>Activities</h1>
+                </div>
+                <div class="bg-activities">
+                    <img src="img/decoration/decor (16).png" alt="Image">
+                </div>
+
+                <div class="container act-wrapper">
+                    <div class="row row-cols-1 row-cols-md-2">
+                        <div class="col" id="afterMovie">
+                            <iframe src="https://www.youtube.com/embed/7Ivx2wLSbdU" frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="col" id="act-content1">
+                            <a href="https://ultimagz.com/berita-kampus/think-wisely-act-differently-membuat-konten-yang-menarik-dan-bermanfaat-di-era-digital/"
+                                target="_blank">
+                                <img class="img-fluid" id="img-c1"
+                                    src="img/activities-content/tvonair2019 (1).jpg" alt="Think Wisely" />
+                                <p class="aText1">Think Wisely Act Differently</p>
+                            </a>
+                        </div>
+                        <div class="col" id="act-content2">
+                            <a href=" https://www.umn.ac.id/umn-tv-hadirkan-najwa-shihab-dalam-acara-pembuka-televisionair-2019/"
+                                target="_blank">
+                                <img class="img-fluid" id="img-c2"
+                                    src="img/activities-content/tvonair2019 (3).jpg" alt="Najwa Shihab" />
+                                <p class="aText2">People and Stories</p>
+                            </a>
+                        </div>
+                        <div class="col" id="act-content3">
+                            <a href="https://ultimagz.com/berita-kampus/info-kampus/najwa-shihab-ajak-jurnalis-muda-hadapi-revolusi-media-di-era-digital/"
+                                target="_blank">
+                                <img class="img-fluid" id="img-c3"
+                                    src="img/activities-content/tvonair2019 (2).jpg" alt="Najwa Shihab" />
+                                <p class="aText3">Menghadapi Revolusi Media</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="act-bird1">
+                    <img src="img/decoration/decor (6).png" alt="Bird">
+                </div>
+                <div id="act-bird2">
+                    <img src="img/decoration/decor (12).png" alt="Bird">
+                </div>
+            </div>
+
+        </div>
+        <!-- End Of Activities -->
+
+
+        <!-- About Us -->
+        <div class="section" id="section3">
+            <div class="slide" id="slide1">
+                <div class="intro">
+                    <h1>About Us</h1>
+                </div>
+                <!-- <div id="bg-about">
+                    <img src="assets/images/decoration/decor (8).png" alt="Image">
+                </div> -->
+                <div id="bg-about">
+                    <img src="img/decoration/decor (16).png" alt="Image">
+                </div>
+                <p>
+                    TVONAIR merupakan acara tahunan yang diadakan oleh UMN TV. Acara ini pertama kali diadakan
+                    Maret 2016 dengan dukungan penuh dari AJI (Aliansi Jurnalis Independen). <br>Awalnya, TVONAIR
+                    memiliki tujuan merangkul media-media kampus, terutama TV kampus se-Jabodetabek untuk belajar
+                    bersama mengenai pertelevisian dan penyiaran, sekaligus menciptakan sebuah standar yang harus
+                    dicapai bagi semua media kampus se-Jabodetabek. <br>TVONAIR akhirnya menjadi tempat terbentuk dan
+                    disahkannya organisasi pertama yang menjadi rumah bagi media televisi kampus di Indonesia: ATKI
+                    (Asosiasi Televisi Kampus Indonesia).
+                </p>
+				<div id="about-tv2">
+                    <img src="img/decoration/decor (34).png" alt="TV">
+                </div>
+                <div id="about-remote">
+                    <img src="img/decoration/decor (33).png" alt="Remote">
+                </div>
+                <div id="about-tripod2">
+                    <img src="img/decoration/decor (30).png" alt="Tripod">
+                </div>
+            </div>
+        </div>
+        <!-- End Of About Us -->
+
+
+        <!-- Parters -->
+        <!-- <div class="section" id="section4">
+            <div class="intro">
+                <h1>Partners</h1>
+            </div>
+        </div> -->
+        <!-- End Of Partners -->
+
+
+        <!-- Contact Us -->
+        <div class="section" id="section5">
+            <div class="slide" id="slide1">
+                <div class="intro">
+                    <h1>Contact Us</h1>
+                    <!-- https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=televisionair6.0@gmail.com -->
+                    <!-- https://www.instagram.com/tv.onair/?hl=en -->
+                </div>
+                <div id="bg-contact">
+                    <img src="img/decoration/decor (16).png" alt="Image">
+                </div>
+                <div id="gmail_wrap">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=televisionair6.0@gmail.com"
+                        target="_blank">
+                        <img src="img/logo-gmail.png" alt="Gmail" id="gmail-logo">
+                    </a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=televisionair6.0@gmail.com"
+                        target="_blank">
+                        <span id="gmail-text">televisionair6.0@gmail.com</span>
+                    </a>
+                </div>
+                <div id="ig_wrap">
+                    <a href="https://www.instagram.com/tv.onair/?hl=en" target="_blank">
+                        <img src="img/logo-ig.png" alt="IG" id="ig-logo">
+                    </a>
+                    <a href="https://www.instagram.com/tv.onair/?hl=en" target="_blank">
+                        <span id="ig-text">tv.onair</span>
+                    </a>
+                </div>
+                <div id="about-antena">
+                    <img src="img/decoration/decor (14).png" alt="Image">
+                </div>
+                <div id="about-tv">
+                    <img src="img/decoration/decor (13).png" alt="Image">
+                </div>
+            </div>
+        </div>
+        <!-- End Of Contact Us -->
+    </div>
+    <!-- ~~~End Of All Content~~~ -->
+
+
+
+    <!-- Fullpage JS -->
+    <script type="text/javascript" src="js/fullpage.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- TimelineMax -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
+        integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw=="
+        crossorigin="anonymous"></script>
+
+    <!-- TweenMax -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+        integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w=="
+        crossorigin="anonymous"></script>
+
+    <!-- Custom JS -->
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
